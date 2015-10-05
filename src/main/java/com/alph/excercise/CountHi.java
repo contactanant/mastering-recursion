@@ -13,9 +13,8 @@ public class CountHi {
     public int calculate(String str) {
         if (str == null || str.length() < 2)
             return 0;
-        if ("hi".equals(str.substring(0,2))) return 1 + calculate(str.substring(2));
 
-        return calculate(str.substring(1));
+        return "hi".equals(str.substring(0,2)) ? 1 + calculate(str.substring(2)) : calculate(str.substring(1));
     }
 
     public static void main(String[] args) {

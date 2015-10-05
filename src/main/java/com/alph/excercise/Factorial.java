@@ -10,6 +10,7 @@ package com.alph.excercise;
  factorial(3) → 6
  */
 public class Factorial {
+
  public int calculateFactorial(int n) {
   return n <= 1 ? 1 : n * calculateFactorial(n - 1);
  }

@@ -18,4 +18,5 @@ public class SimDigit {
   System.out.println(new SimDigit().calculate(49));
   System.out.println(new SimDigit().calculate(300));
  }
+
 }

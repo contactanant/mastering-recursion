@@ -12,9 +12,8 @@ public class CountX {
     public int calculate(String str) {
         if (str == null || str.length() == 0)
             return 0;
-        if ("x".equals(str.substring(0,1))) return 1 + calculate(str.substring(1));
 
-        return calculate(str.substring(1));
+        return "x".equals(str.substring(0, 1)) ? 1 + calculate(str.substring(1)) : calculate(str.substring(1));
     }
 
     public static void main(String[] args) {

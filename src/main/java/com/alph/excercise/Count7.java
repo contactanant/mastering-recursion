@@ -9,7 +9,7 @@ package com.alph.excercise;
  */
 public class Count7 {
   public int calculate(int number) {
-      return number < 10 ? (number % 10 == 7 ? 1 : 0) : calculate(number / 10) + calculate(number % 10);
+      return number < 10 ? (number == 7 ? 1 : 0) : calculate(number / 10) + calculate(number % 10);
   }
 
  public static void main(String[] args) {
